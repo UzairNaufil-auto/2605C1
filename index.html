@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Wala | Artisanal Specialty Coffee Bar & Roastery</title>
+  <meta name="description" content="Experience handcrafted single-origin roasts, pour-over rituals, and soulful mornings at Coffee Wala. Poured with passion, roasted to perfection.">
+  <meta name="theme-color" content="#0b0806">
+
+  <!-- Favicon Icon (Coffee Cup SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e6a765'%3E%3Cpath d='M2 19h18v2H2zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3z'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Lenis CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-nav">
+      <a href="#hero" class="brand" aria-label="Coffee Wala Home">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM2 19h18v2H2z"/>
+          </svg>
+        </div>
+        <div class="brand-text">COFFEE <span>WALA</span></div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#story" class="nav-link">Our Story</a></li>
+        <li><a href="#craft" class="nav-link">The Craft</a></li>
+        <li><a href="#roasts" class="nav-link">Single Origins</a></li>
+        <li><a href="#menu" class="nav-link">Cafe Menu</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#visit" class="nav-link">Visit Us</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <div class="status-pill">
+          <span class="pulse-dot"></span>
+          <span>Brewing Now</span>
+        </div>
+        <a href="#visit" class="btn btn-primary btn-sm">Reserve Table</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close-btn" id="mobile-close" aria-label="Close Menu">&times;</button>
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#story" class="mobile-nav-link">Our Story</a>
+    <a href="#craft" class="mobile-nav-link">The Craft</a>
+    <a href="#roasts" class="mobile-nav-link">Single Origins</a>
+    <a href="#menu" class="mobile-nav-link">Cafe Menu</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#visit" class="mobile-nav-link">Visit & Reserve</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text Content -->
+          <div class="hero-content">
+            <div class="section-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              Artisanal Specialty Coffee Bar
+            </div>
+            <h1 class="hero-title">
+              BREWED WITH <span class="title-accent">SOUL.</span><br>
+              SERVED WITH <span class="italic">HERITAGE.</span>
+            </h1>
+            <p class="hero-description">
+              Step inside Coffee Wala — where shade-grown Indian single origins meet small-batch drum roasting and mindful slow pours. An honest devotion to the bean.
+            </p>
+            <div class="hero-actions">
+              <a href="#roasts" class="btn btn-primary">
+                <span>Explore Signature Roasts</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="#visit" class="btn btn-outline">Visit Our Roastery</a>
+            </div>
+
+            <!-- Stats Ribbon -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h4 class="counter" data-target="18">0</h4>
+                <p>Micro-lot Estates</p>
+              </div>
+              <div class="stat-item">
+                <h4 class="counter" data-target="88" data-suffix=".5">0</h4>
+                <p>Q-Grader Score</p>
+              </div>
+              <div class="stat-item">
+                <h4 class="counter" data-target="100" data-suffix="%">0</h4>
+                <p>Direct Trade Arabica</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Showcase Frame -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-image-frame" id="hero-frame">
+              <img src="images/hero.jpg" alt="Coffee Wala Espresso Bar and Barista" class="hero-image" id="hero-img">
+              <div class="hero-overlay-glow"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="floating-badge-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+              </div>
+              <div class="floating-badge-text">
+                <strong>100% Arabica</strong>
+                <span>Chikmagalur & Coorg</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="floating-badge-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <div class="floating-badge-text">
+                <strong>4.9 / 5 Rating</strong>
+                <span>Over 3,200 Coffee Aficionados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee Ticker -->
+    <div class="marquee-ribbon" aria-hidden="true">
+      <div class="marquee-content">
+        <div class="marquee-item">MONSOON MALABAR AA <span class="bullet">✦</span></div>
+        <div class="marquee-item">SLOW DRUM ROASTED <span class="bullet">✦</span></div>
+        <div class="marquee-item">SOUTH INDIAN FILTER KAAPI <span class="bullet">✦</span></div>
+        <div class="marquee-item">SAFFRON NITRO COLD BREW <span class="bullet">✦</span></div>
+        <div class="marquee-item">SHADE-GROWN ETHICAL SOURCING <span class="bullet">✦</span></div>
+        <div class="marquee-item">HAND-POURED V60 RITUAL <span class="bullet">✦</span></div>
+        <div class="marquee-item">FRESH BAKED ALMOND CROISSANTS <span class="bullet">✦</span></div>
+        <!-- Duplicated for seamless loop -->
+        <div class="marquee-item">MONSOON MALABAR AA <span class="bullet">✦</span></div>
+        <div class="marquee-item">SLOW DRUM ROASTED <span class="bullet">✦</span></div>
+        <div class="marquee-item">SOUTH INDIAN FILTER KAAPI <span class="bullet">✦</span></div>
+        <div class="marquee-item">SAFFRON NITRO COLD BREW <span class="bullet">✦</span></div>
+        <div class="marquee-item">SHADE-GROWN ETHICAL SOURCING <span class="bullet">✦</span></div>
+        <div class="marquee-item">HAND-POURED V60 RITUAL <span class="bullet">✦</span></div>
+        <div class="marquee-item">FRESH BAKED ALMOND CROISSANTS <span class="bullet">✦</span></div>
+      </div>
+    </div>
+
+    <!-- Story & Philosophy Section -->
+    <section class="section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-visual-stack">
+            <img src="images/interior.jpg" alt="Coffee Wala warm lounge ambiance" class="story-main-img" id="story-img">
+            <div class="glass-panel story-sub-card">
+              <h5>The Coffee Wala Promise</h5>
+              <p>Roasted every Tuesday & Friday in small 12kg batches so your cup is never more than seven days off the drum.</p>
+            </div>
+          </div>
+
+          <div class="story-content">
+            <div class="section-tag">Our Roots</div>
+            <h2>Born from a Reverence for the Indian Coffee Bean</h2>
+            <p>
+              In an era of rushed mornings and bitter commercial blends, Coffee Wala was founded with one simple obsession: to honor the exceptional terroir of India’s high-altitude coffee belt.
+            </p>
+            <p>
+              From the mist-shrouded elevations of Bababudangiri — where the legendary Sufi saint Baba Budan first planted coffee seeds four centuries ago — to modern precision roasting, we bridge timeless heritage with modern specialty coffee craft.
+            </p>
+
+            <div class="story-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon">🌱</div>
+                <h5>Shade-Grown Canopy</h5>
+                <p>Nurtured beneath silver oaks and cardamom groves alongside wild biodiversity.</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">⚖️</div>
+                <h5>Direct Farmer Trade</h5>
+                <p>Fair pricing paid directly to growers, fostering multi-generational sustainability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Craft - Pinned Horizontal Scroll Section -->
+    <section class="craft-pinned-wrapper" id="craft">
+      <div class="craft-container" id="craft-pin-container">
+        <div class="container">
+          <div class="craft-header-bar">
+            <div>
+              <div class="section-tag">Bean to Cup</div>
+              <h2 class="section-title">The Four Rituals of Our Craft</h2>
+            </div>
+            <p class="section-subtitle" style="max-width: 380px;">
+              Scroll down to journey through our meticulous brewing philosophy.
+            </p>
+          </div>
+        </div>
+
+        <div class="craft-track" id="craft-track">
+          <!-- Step 1 -->
+          <div class="craft-card">
+            <img src="images/beans.jpg" alt="Coffee cherries and roasted beans" class="craft-card-bg">
+            <div class="craft-card-gradient"></div>
+            <div class="craft-card-content">
+              <span class="craft-step-num">STEP 01</span>
+              <h3>Curated Harvesting</h3>
+              <p>Only hand-plucked ruby red cherries harvested at 21° Brix sugar concentration for naturally balanced sweetness.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="craft-card">
+            <img src="images/hero.jpg" alt="Small batch roasting" class="craft-card-bg">
+            <div class="craft-card-gradient"></div>
+            <div class="craft-card-content">
+              <span class="craft-step-num">STEP 02</span>
+              <h3>Artisanal Drum Roasting</h3>
+              <p>Calibrating convection airflow and temperature profiles to unlock sweet caramel, toasted spices, and rich cocoa butter.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="craft-card">
+            <img src="images/pourover.jpg" alt="Pour over V60 ritual" class="craft-card-bg">
+            <div class="craft-card-gradient"></div>
+            <div class="craft-card-content">
+              <span class="craft-step-num">STEP 03</span>
+              <h3>The 28-Second Pull</h3>
+              <p>Dialed-in 9 bars of steam pressure delivering golden tiger-striped crema with nuanced aromatic complexity.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="craft-card">
+            <img src="images/coldbrew.jpg" alt="Cold brew extraction" class="craft-card-bg">
+            <div class="craft-card-gradient"></div>
+            <div class="craft-card-content">
+              <span class="craft-step-num">STEP 04</span>
+              <h3>Slow Sensory Immersion</h3>
+              <p>Whether a 20-hour steeped nitro cold brew or a velvety flat white, each cup is an invitation to pause and savor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Single Origins Showcase -->
+    <section class="section" id="roasts">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Master Roaster Selection</div>
+          <h2 class="section-title">Signature Single Origins</h2>
+          <p class="section-subtitle">
+            Whole bean or precision-ground for your brew device. Delivered fresh in nitrogen-flushed valve bags.
+          </p>
+        </div>
+
+        <div class="roasts-grid">
+          <!-- Card 1 -->
+          <div class="glass-panel roast-card">
+            <div>
+              <div class="roast-badge">★ Estate Flagship</div>
+              <h3>Monsoon Malabar AA</h3>
+              <div class="roast-origin">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Malabar Coast, 1,200m Elevation</span>
+              </div>
+              <div class="roast-level-meter">
+                <div class="meter-header">
+                  <span>ROAST PROFILE</span>
+                  <span>MEDIUM-DARK</span>
+                </div>
+                <div class="meter-bar">
+                  <div class="meter-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+              <div class="flavor-tags">
+                <span class="flavor-tag">Dark Cocoa</span>
+                <span class="flavor-tag">Earthy Tobacco</span>
+                <span class="flavor-tag">Mellow Spice</span>
+              </div>
+            </div>
+            <div class="roast-card-footer">
+              <div class="roast-price">₹540 <span>/ 250g</span></div>
+              <button class="btn btn-outline btn-sm order-toast-btn" data-item="Monsoon Malabar AA">Add to Tray</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-panel roast-card">
+            <div>
+              <div class="roast-badge">✦ High Altitude Micro-Lot</div>
+              <h3>Chikmagalur Sweet Arabica</h3>
+              <div class="roast-origin">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Bababudan Range, 1,450m</span>
+              </div>
+              <div class="roast-level-meter">
+                <div class="meter-header">
+                  <span>ROAST PROFILE</span>
+                  <span>LIGHT-MEDIUM</span>
+                </div>
+                <div class="meter-bar">
+                  <div class="meter-fill" style="width: 45%;"></div>
+                </div>
+              </div>
+              <div class="flavor-tags">
+                <span class="flavor-tag">Wild Honey</span>
+                <span class="flavor-tag">Orange Blossom</span>
+                <span class="flavor-tag">Almond Cream</span>
+              </div>
+            </div>
+            <div class="roast-card-footer">
+              <div class="roast-price">₹620 <span>/ 250g</span></div>
+              <button class="btn btn-outline btn-sm order-toast-btn" data-item="Chikmagalur Sweet Arabica">Add to Tray</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-panel roast-card">
+            <div>
+              <div class="roast-badge">♨ Signature Heritage</div>
+              <h3>Royal Kaapi Gold</h3>
+              <div class="roast-origin">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Coorg Shaded Estates, 1,150m</span>
+              </div>
+              <div class="roast-level-meter">
+                <div class="meter-header">
+                  <span>ROAST PROFILE</span>
+                  <span>VIENNA DARK</span>
+                </div>
+                <div class="meter-bar">
+                  <div class="meter-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="flavor-tags">
+                <span class="flavor-tag">Roasted Chicory 15%</span>
+                <span class="flavor-tag">Brown Sugar</span>
+                <span class="flavor-tag">Thick Body</span>
+              </div>
+            </div>
+            <div class="roast-card-footer">
+              <div class="roast-price">₹480 <span>/ 250g</span></div>
+              <button class="btn btn-outline btn-sm order-toast-btn" data-item="Royal Kaapi Gold">Add to Tray</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-panel roast-card">
+            <div>
+              <div class="roast-badge">❄ House Nitro Reserve</div>
+              <h3>Kashmir Saffron Cold Roast</h3>
+              <div class="roast-origin">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Wayanad Robusta & Arabica</span>
+              </div>
+              <div class="roast-level-meter">
+                <div class="meter-header">
+                  <span>ROAST PROFILE</span>
+                  <span>COLD EXTRACTION</span>
+                </div>
+                <div class="meter-bar">
+                  <div class="meter-fill" style="width: 60%;"></div>
+                </div>
+              </div>
+              <div class="flavor-tags">
+                <span class="flavor-tag">Saffron Strands</span>
+                <span class="flavor-tag">Vanilla Bean</span>
+                <span class="flavor-tag">Velvet Silk</span>
+              </div>
+            </div>
+            <div class="roast-card-footer">
+              <div class="roast-price">₹690 <span>/ 250g</span></div>
+              <button class="btn btn-outline btn-sm order-toast-btn" data-item="Kashmir Saffron Cold Roast">Add to Tray</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Cafe Menu -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Handcrafted in House</div>
+          <h2 class="section-title">The Cafe Menu</h2>
+          <p class="section-subtitle">
+            Every pour, infusion, and pastry prepared with precision ingredients.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="menu-tabs">
+          <button class="menu-tab-btn active" data-category="hot">Hot Classics</button>
+          <button class="menu-tab-btn" data-category="cold">Cold & Nitro</button>
+          <button class="menu-tab-btn" data-category="signatures">Wala Signatures</button>
+          <button class="menu-tab-btn" data-category="bakes">Artisanal Bakes</button>
+        </div>
+
+        <!-- Menu Grid Container -->
+        <div class="menu-items-grid" id="menu-container">
+          <!-- Dynamically populated via script.js for clean structure -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Atmosphere Gallery -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Sensory Space</div>
+          <h2 class="section-title">The Coffee Wala Atmosphere</h2>
+          <p class="section-subtitle">
+            Warm brick, analog acoustics, and the timeless perfume of freshly pulled espresso.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item item-large">
+            <img src="images/hero.jpg" alt="Coffee Wala Main Counter" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h4>The Custom Slayer Espresso Machine</h4>
+                <p>Engineered for unmatched pressure control</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item item-tall">
+            <img src="images/pourover.jpg" alt="Pour Over Bar" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h4>The Slow Pour Bar</h4>
+                <p>V60 & Chemex manual brews</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item item-medium-1">
+            <img src="images/coldbrew.jpg" alt="Iced Cold Brew Glass" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h4>20-Hour Cold Immersion</h4>
+                <p>Silky low-acid extraction</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item item-medium-2">
+            <img src="images/interior.jpg" alt="Cozy reading nook" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h4>Vinyl & Leather Lounge</h4>
+                <p>Warm lights & jazz records</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item item-medium-3">
+            <img src="images/beans.jpg" alt="Freshly roasted beans" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <h4>Small Batch Roast Drum</h4>
+                <p>Roasted to peak sweetness</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit & Table Reservation Section -->
+    <section class="section" id="visit">
+      <div class="container">
+        <div class="visit-grid">
+          <!-- Info Panel -->
+          <div class="glass-panel visit-info-panel">
+            <div>
+              <div class="section-tag">Come On In</div>
+              <h2 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 1.5rem;">Join Us at the Bar</h2>
+              
+              <div class="info-block">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  Flagship Roastery
+                </h4>
+                <p>14 Heritage Lane, Near Old Gulmohar Enclave<br>New Delhi, 110049</p>
+              </div>
+
+              <div class="info-block">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                  </svg>
+                  Brewing Hours
+                </h4>
+                <p>Monday – Friday: 07:30 AM – 10:30 PM<br>Saturday – Sunday: 07:00 AM – 11:30 PM</p>
+              </div>
+
+              <div class="info-block">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  Direct Contact
+                </h4>
+                <p>concierge@coffeewala.in | +91 98110 44221</p>
+              </div>
+            </div>
+
+            <div class="perks-list">
+              <span class="perk-tag">✦ High Speed Wi-Fi</span>
+              <span class="perk-tag">✦ Pet Friendly Patio</span>
+              <span class="perk-tag">✦ Valet Parking</span>
+              <span class="perk-tag">✦ Tasting Flights</span>
+            </div>
+          </div>
+
+          <!-- Reservation Form Panel -->
+          <div class="glass-panel reservation-form-panel">
+            <h3>Reserve a Coffee Tasting or Table</h3>
+            <p>Ensure an uninterrupted experience. We hold reserved tables for 15 minutes past your booking time.</p>
+            
+            <form id="reservation-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="res-name">Your Full Name</label>
+                  <input type="text" id="res-name" class="form-control" placeholder="Aarav Sharma" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-phone">Phone Number</label>
+                  <input type="tel" id="res-phone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-guests">Number of Guests</label>
+                  <select id="res-guests" class="form-control">
+                    <option value="1">1 Person (Brew Bar Spot)</option>
+                    <option value="2" selected>2 Persons (Cozy Corner)</option>
+                    <option value="4">4 Persons (Lounge Table)</option>
+                    <option value="6">6+ Persons (Community Bench)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-date">Date</label>
+                  <input type="date" id="res-date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-time">Preferred Time</label>
+                  <select id="res-time" class="form-control">
+                    <option value="09:00">09:00 AM (Morning Brew)</option>
+                    <option value="11:30">11:30 AM (Brunch Pour)</option>
+                    <option value="16:00" selected>04:00 PM (Sunset Roast)</option>
+                    <option value="19:30">07:30 PM (Evening Lounge)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-pref">Brew Preference</label>
+                  <select id="res-pref" class="form-control">
+                    <option value="espresso">Specialty Espresso Bar</option>
+                    <option value="pourover">Manual V60 Pour-over</option>
+                    <option value="nitro">Nitro & Cold Drips</option>
+                    <option value="dessert">Artisanal Bakes & Kaapi</option>
+                  </select>
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="res-notes">Special Requests (Optional)</label>
+                  <textarea id="res-notes" rows="2" class="form-control" placeholder="Allergies, oat milk preference, anniversary notes..."></textarea>
+                </div>
+
+                <div class="form-group full-width" style="margin-top: 0.5rem;">
+                  <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <span>Confirm Table Reservation</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <div class="toast-icon">☕</div>
+    <div class="toast-text" id="toast-text">Item added to your tasting tray!</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>COFFEE <span class="text-gold">WALA</span></h3>
+          <p>
+            An ode to the Indian single-origin coffee estate. Poured with mindful devotion, crafted with artisanal mastery.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Welcome</a></li>
+            <li><a href="#story">Our Philosophy</a></li>
+            <li><a href="#craft">The Four Rituals</a></li>
+            <li><a href="#roasts">Single Origins</a></li>
+            <li><a href="#menu">Daily Cafe Menu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Coffee Spaces</h5>
+          <ul class="footer-links">
+            <li><a href="#visit">Delhi Roastery</a></li>
+            <li><a href="#visit">Bandra Espresso Bar</a></li>
+            <li><a href="#visit">Indiranagar Brew House</a></li>
+            <li><a href="#visit">Private Cupping Room</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col newsletter-box">
+          <h5>The Wala Journal</h5>
+          <p>Get first access to limited harvest micro-lots and weekend cupping events.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Coffee Wala Roasters. Handcrafted with reverence. All rights reserved.</p>
+        <p>Crafted for coffee aficionados everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Lenis (Smooth Scroll) + GSAP & ScrollTrigger -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
